@@ -1,0 +1,16 @@
+div.box>h2#title.tit{color: aqua;}
+div h2#title.tit{color: firebrick;}
+h2#title.tit{color: teal;}
+h2#title{color: yellow;}
+#title{color: blueviolet;}
+h2.tit{color: darkblue;}
+.tit{color: green;}
+.tit{color: violet;}
+h2{color: blue;}
+h2{color:red; background: orange;}
+h2{color: blue !important;}
+.tit{color: blueviolet !important;}
+
+.parent{color: blue;border: 1px solid black;}
+h1{color: red;}
+

@@ -1,0 +1,58 @@
+/*1.reset-스타일 초기화
+각 태그마다 적용된 기본스타일을 없애줌
+
+*{margin: 0 ; padding: 0;}
+a{text-decoration: none;
+  color: black;} /*#000*/
+  /*a{color:inherit;}*/
+body{background-color: ivory;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+/*
+2.common-공통스타일(대부분 적용되는 스타일-상속개념을 사용해서 한번에 적용되도록)
+*/
+
+/*3.layout-대략적인 배치*/
+/*4.detail-상세디자인 */
+
+.b{
+    margin: 0 auto;
+    width: 900px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    background-image:url("../img/예제.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    
+
+   
+    
+}
+.title{
+   
+    font-size: 50px;
+    border-top:3px solid red;
+    border-bottom:3px solid red ;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+.s_t{
+    margin-top: 10px;
+    /* padding-bottom: 10px; */
+    font-size: 30px;
+    border-bottom: 3px solid red;
+    background-color: orange;
+    line-height:30px;
+}
+.s_c{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.s_c.s_cc{
+    border-bottom:3px solid red ;
+}

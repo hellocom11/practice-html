@@ -1,0 +1,68 @@
+html{
+    font:20px "noto sans kr", sans-serif;
+}
+/*  layout(배치,크기설정)
+    tip)큰 영역->작은 영역 순으로
+*/
+.bg{
+   
+    height: 250px;
+    background:url("../img/sub_vis01_02.jpg") 50% 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 250px;
+}
+.main{
+
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.main h2{
+    font-size: 30px;
+    margin-bottom: 100px;
+    background: url("../img/sub_tit_line.gif") repeat-x 0 50%;
+   
+}
+.main h2 b{
+   background-color: white;
+   padding-right: 20px;
+}
+.main h3{
+font-size:52px;
+font-family: "풀무원";
+padding-left: 70px;
+padding-right: 70px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+@font-face {
+    font-family:"풀무원" ;
+    src: url("../font/PulmuoneLOHASBold.woff");
+}
+.main h3 span{color: #82B061;}
+.story{
+    width: 810px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+    box-sizing: border-box;
+    background: #F4F4F4;
+    text-align: center;
+
+}
+.story h4{
+    font-size: 35px;
+    font-family: "풀무원";
+    margin-bottom: 25px;
+}
+.story p:last-of-type{
+   
+    margin-top: 30px;
+}

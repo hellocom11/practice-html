@@ -1,0 +1,16 @@
+h1{
+    border: 1px solid red;
+    /*width: 400px; 
+    height: 400px;*/
+    height: 20px;
+}
+ul{border: 1px solid blue;
+    width: 500px;
+}
+span{
+    border: 1px solid green;
+    width: 300px;
+    /*height: 300px;*/
+}
+.box{display: inline-block;}
+/* *{border: 1px solid red;}

@@ -1,0 +1,75 @@
+body{margin-bottom: 500px;}
+@keyframes warigari {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes updown {
+    0%{transform: translateY(0%);}
+    100%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+
+}
+@keyframes run {
+    0%{transform: translateX(0%);}
+    25%{transform:  translateX(100%) translateY(0%);}
+    50%{transform: translateX(100%) translateY(100%);}
+    75%{transform: translateX(0%) translateY(100%);}
+    100%{transform: translateX(0%) translateY(0%);}
+
+ 
+    
+
+
+}
+.box{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    /* animation-name: warigari;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; */
+
+}
+.warigari{
+    /* animation-name: warigari;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 3; */
+    animation: warigari 2s linear 0s infinite;
+}
+.updown{
+    /* animation-name: updown; */
+    /* animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count:3;
+    animation-direction:normal;
+    animation-fill-mode: backwards; */
+    animation: updown 2s linear 0s 3 alternate backwards;
+}
+.box2{
+    background: blue;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+}
+.box3{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+.run{
+animation: run 4s linear 0s infinite normal ;}  
+/* 애니메이션 - 위치를 잘 생각하며 하기 - run참고  */

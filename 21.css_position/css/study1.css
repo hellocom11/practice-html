@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border:10px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    right: 200px;
+    bottom: 200px;
+}
+.box+p{
+    border: 1px solid red;
+}
+.box2{
+    border:1px solid black; 
+    position: absolute;
+    right: 100px;
+    bottom:200px;
+}
+.box2+p{
+    border: 1px solid red;
+}
+.outter_box2{
+    border:10px solid lime;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+.box3{
+    border:10px solid blue;
+    position: fixed;
+    left: 300px;
+    top: 300px;
+}

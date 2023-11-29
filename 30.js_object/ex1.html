@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cgv예제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <div class="movieChart">
+        <div class="contentFrame">
+            <h2>무비차트
+                <a href="#">전체보기 ></a>
+            </h2>
+            <ol>
+                <script>
+                    let movieChart = [
+                        {
+                         title:"화사한 그녀",
+                         thumb:"img1.jpg",
+                         rank:1,
+                         pre:99,
+                         real:0,
+                         reser:33.3   
+                        },
+                        {
+                            title:"화란", 
+                            thumb:"img2.jpg",
+                            rank:2,
+                            pre:99,
+                            real:0, 
+                            reser:13.5 
+                        },
+                        {
+                            title:"30일", 
+                            thumb:"img3.jpg",
+                            rank:3,
+                            pre:0,
+                            real:93, 
+                            reser:10.9
+                        },
+                        {
+                            title:"바람 따라 만나리 : 김호중의 계절", 
+                            thumb:"img4.jpg",
+                            rank:4,
+                            pre:96,
+                            real:0,
+                            reser:9.5 
+                        },
+                        {
+                            title:"천박사 퇴마 연구소 - 설경의 비밀", 
+                            thumb:"img5.jpg",
+                            rank:5,
+                            pre:0,
+                            real:88,
+                            reser:7.0
+                        },
+                        
+                    ]
+                    console.log(movieChart)
+                    for (let i=0; i<movieChart.length; i++)
+                    
+                    document.write(
+                        `<li>
+                   <figure>
+                    <img src="./img/${movieChart[i].thumb}" alt="${movieChart[i].title}">
+                    <span>${movieChart[i].rank}</span>
+                    <ul class="hidMenu">
+                        <li><a href="#">상세보기</a></li>
+                        <li class="a"><a href="#">예매하기</a></li>
+                    </ul>
+                </figure>
+                <h3>${movieChart[i].title}</h3>
+                <dl>
+                    <dt><img src="./img/${movieChart[i].pre?"eggGoldeneggPreegg.png":"eggGoldenegggreat.png"}" alt="사전기대지수"></dt>
+                    <dd>${movieChart[i].pre?movieChart[i].pre:movieChart[i].real}%</dd>
+                    <dt>예매율</dt>
+                    <dd>${movieChart[i].reser}%</dd>
+                </dl>
+                </li>`
+                    )
+
+
+                    let a = 0
+                    let b = 70
+                    a?"안":b>70?"녕":"하세요"
+               </script>
+
+                
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

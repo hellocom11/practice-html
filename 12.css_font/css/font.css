@@ -1,0 +1,25 @@
+@font-face{
+    font-family:"myfont1";
+    src:url("../font/Jua-Regular.ttf");
+}
+
+@font-face{
+    font-family: myfont2;
+    src:url(../font/GabiaMaeumgyeol.ttf);
+}
+
+.f_jua{
+    font-family:"myfont1";
+}
+
+.f_gabi{
+    font-family: myfont2;
+}
+@font-face{
+    font-family: "myfont3";
+    src:url("../../13.css_background/font/PulmuoneLOHASBold.woff")
+}
+
+.f_pul{
+    font-family: "myfont3";
+}

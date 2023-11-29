@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+  
+</head>
+<body       >
+    <!-- 자바스크립트를 이용해서 구구단2단부터 9단까지 li태그로 만들어라 -->
+    <!-- <ul>
+       <li> 2x1=2</li> -->
+       <!-- <li style="background: rgb(red, green, blue);"> 2x2=4</li>
+       <li> 2x3=6</li>
+       <li> 2x4=8</li>
+       <li> 2x5=10</li>
+       <li> 2x1=2</li>
+       <li> 2x1=2</li>
+       <li> 2x1=2</li>
+       <li> 2x1=2</li>
+    </ul> -->
+
+    <script>
+
+      let i =1
+      let j = 1
+     
+        
+      for(i=2; i<10; i++){
+        document.write("<ul>")
+        for(j=1; j<10; j++){
+            let r = Math.round(Math.random()*255)
+            let g = Math.round(Math.random()*255)
+            let b = Math.round(Math.random()*255)
+        document.write(`<li style="background:rgb(${r},${g},${b})">${i}x${j}=${i*j}</li><br>`)}
+        document.write("</ul>")
+      }
+     
+    </script>
+</body>
+</html>

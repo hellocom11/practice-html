@@ -1,0 +1,176 @@
+/* common */
+html{
+    font-size: 12px;
+    font-family: 'notosans kr', sans-serif;
+}
+/* layout */
+/* 큰 영역-> 작은 영역 사이즈와 배치 */
+.container{
+    border: 1px solid red;
+    width: 920px;
+    margin: 0 auto;
+}
+/* header */
+header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    border: 1px solid blue;
+   
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   }
+
+
+nav>ul{
+    display: flex;
+}
+.lnb>li{
+    padding: 4px 8px;
+    color: white;
+    background: url("../img/t.gif") no-repeat 100% 50%;
+}
+.lnb>li:last-of-type{
+    background: none;
+}
+nav>ul>li{
+    border: 1px solid blue;
+ 
+    
+    text-transform: uppercase;
+}
+
+nav>ul>li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lnb{
+    margin-bottom: 24px;
+    background: #4C4C4C;
+    padding: 0 8px;
+    border-radius:0 0 8px 8px;
+}
+
+.gnb{}
+
+.gnb>li>a{
+    display: block;
+    border: 1px solid red;
+    padding:0 25px;
+
+}
+/* main */
+main{
+    margin-top: 30px;
+    border: 1px solid blue;
+}
+
+.contents{
+    display: flex;
+   
+}
+
+.contents>section{
+    border: 1px solid green;
+    flex: 1;
+    margin-right: 27px;
+    box-sizing: border-box;
+}
+.contents>section:last-of-type{
+    margin-right:0;
+}
+
+
+
+.quickmenu{
+    border: 1px solid red;
+    display: flex;
+}
+.quickmenu>li{
+    border: 1px solid blue;
+    margin-right: 7px;
+}
+.quickmenu>li:last-of-type{margin-right: 0;}
+
+
+.contents>section>h3{
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 14px;
+    display:flex ;
+    align-items: flex-start;
+    justify-content: space-between
+
+}
+
+
+.noticelist{
+    border: 1px solid blue;
+}
+.noticelist>li{
+    border: 1px solid red;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.noticelist>li:last-of-type{
+    margin-bottom: 0;
+}
+
+.noticelist>li>span{
+    border: 1px solid black;
+}
+
+/* footer */
+
+footer{background: #F0F0F0;}
+
+.innerframe{
+   
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 920px;
+    display: flex;
+}
+.flogo{
+    border: 1px solid blue;
+    
+    margin-right: 26px;
+    
+}
+.info{
+    border: 1px solid blue;
+   
+}
+
+.info>ul>li{
+    border:1px solid blue ;
+   
+    padding:0 10px ;
+    
+}
+.info>ul{
+    margin-bottom: 8px;
+    display: flex;
+}
+.info>ul>li:first-of-type{padding-left: 0;}
+
+.flogo>img{width: 170px; height: 50px;}
+.info>dl{
+    border:1px solid blue ;
+}
+.info>dl>*{
+    border:1px solid blue ;
+    display: inline;
+}
+footer{
+    margin-top: 36px;
+    padding: 22px 0;
+}

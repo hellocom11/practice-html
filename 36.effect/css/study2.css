@@ -1,0 +1,53 @@
+*{
+    margin: 0; padding: 0;
+}
+ul,ol{list-style: none;}
+i,em{font-style: inherit;}
+html{
+    font-family:'Noto Sans Kr',sans-serif
+}
+.intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    font-size: 3rem;
+    line-height: 1;
+}
+.text h1>b{
+    font-size: 2em;
+}
+.text>p{
+    text-transform: uppercase;
+}
+
+
+
+
+.pp{width: 300px;}
+.profile{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .txt{
+    width: 50%;
+}
+
+.profile .txt h1{
+    margin-bottom: 20px;
+}
+.button{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

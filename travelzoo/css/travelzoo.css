@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none; color: inherit;}
+li{
+    list-style: none;
+}
+ul,ol{list-style: none;}
+address{
+    font-style: normal;
+}
+html{
+    font-size: 12px;
+}
+.container{
+    border: 1px solid rgb(255, 0, 157);
+    width: 820px;
+    margin: 0 auto;
+}
+
+.header{
+    border: 1px solid red;
+    margin-bottom: 17px;
+}
+.header>img{
+    margin-top: 10px;
+}
+.header>p{
+    font-size: 15px;
+    font-style: italic;
+    padding-bottom: 4px;
+    color: rgb(173, 173, 173);
+    border-bottom: 3px solid #0555AE;
+}
+
+.main{
+    border: 1px solid red;
+}
+.main>.checkbox>h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+form{
+    background: rgb(241, 241, 241);
+    padding: 10px 10px ;
+    border: 1px solid rgb(175, 175, 175);
+   
+}
+.checkbox form{ vertical-align: middle;}
+
+.select{
+    border: 1px solid blue;
+    margin-top: 10px;
+    flex: 1;
+    
+}
+.bb{
+    display: flex;
+    justify-content: space-between;
+}
+.Asia{
+   
+    border: 1px solid red;
+}
+.ff{
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.display1{
+    width: calc(790px/3); 
+    
+}
+/* .display1>img{margin-right: 5px;} */
+.display1>li{
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+    margin-right: 5px;
+    margin-bottom: 15px;
+
+    /* flex-direction: column; */
+}
+.display1>li:last-of-type{
+    margin-bottom: 70px;
+}
+.display1>li>div{
+    justify-content: flex-start;
+}
+figure{margin-right: 10px;}
+
+.America{
+    border: 1px solid red;
+}
+.Europe{
+    border: 1px solid red;
+}
+.footer{
+    border: 1px solid red;
+    width: 820px;
+    margin: 0 auto;
+    background: rgb(231, 231, 231);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fww{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fw{
+    
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  
+}
+.fu{
+    font-weight: bold;
+    font-size: 15px;
+}
+span{
+    color: blue;
+}

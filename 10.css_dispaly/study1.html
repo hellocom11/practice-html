@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <blockquote>html은 먼저 만든 태그가 블록처럼 쌓이는 구조다.</blockquote>
+    <h1>태그의 형태 - display</h1>
+    <ul>
+        <li>display:block -> 블록레벨태그 - h1,h2,h3 ...,p,ul,ol,li,dl,dt,dd,div,header, footer....</li>
+        <li>display:inline -> 인라인레벨태그 - a,b,strong,i,em,label</li>
+        <li>display: inline-block - > 인라인블록레벨태그 - img,video, </li>
+    </ul>
+    <hr>
+    <h2>블록레벨태그 특징</h2>
+    <ul>
+        <li>body태그도 블록레벨태그이고,사용자가 브러우저 너비를 줄이고 늘릴 때 자동으로 조절되는 기본값(width:auto)가 설정되어 있다.</li>
+        <li>블록레벨태그의 높이는 포함하는 컨텐츠의 양만큼 늘어나거나 줄어드는 auto값이 기본값이다.</li>
+        <li>포함하는 컨텐츠의 양과 관계없이 한 폭의 너비를 전체적으로 차지한다.</li>
+        <li>박스형태를 가지고 있다. -> 가로와 세로사이즈의 조절이 가능하다</li>
+    </ul>
+
+    <h2>인라인레벨태그의 특징</h2>
+    <ul>
+        <li>포함하는 컨텐츠 양만큼의 너비를 차지한다.</li>
+         <li>박스형태가 아님 -> 가로와 세로사이즈를 조절할 수 없다.</li>
+    </ul>
+    <span >나는 스팬태그다1.</span>
+    <span class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ad distinctio tenetur et cum, ullam hic animi magnam cupiditate suscipit, adipisci corporis fugit. Voluptates numquam a nulla eos, quaerat aut!</span>
+
+     <h2>인라인블록레벨태그 특징</h2>
+     <ul>
+        <li>인라인레벨태그처럼 베이스라인을 기준으로 배치가 되고, 블록레벨태그처럼 박스 형태를 가지고 있는 형태</li>
+        <li>가로 세로 사이즈 조절이 가능하다</li>
+        <li>줄바꿈이 안되고 나란히 배치가 된다.</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열문제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <!-- <h1>문제</h1>
+    <p>한 학급에 4명의 학생이 있습니다. 학생의 정보</p>
+    <ul>
+        <li>황지영/28/여자/미혼/취미:산책,음악감상,영화보기</li>
+        <li>김영환/30/남자/미혼/취미:축구,노래,게임</li>
+        <li>이혜리/37/여자/미혼/취미:요리,조리</li>
+        <li>신지연/28/여자/기혼/취미:전시회,사격</li>
+    </ul>
+    <p>다음과 같은 정보를 배열데이터로 정리해보시오</p> -->
+    
+    <div class="wrap">
+        <h1>웹퍼블리셔 성남캠퍼스 7기 학생 리스트</h1>
+        <ul class="studentlist">
+            <!-- <li>
+                <h1>황지영</h1>
+                 <dl>
+                    <dt>나이:</dt>
+                    <dd>28살</dd>
+                    <dt>성별:</dt>
+                    <dd>여자</dd>
+                    <dt>결혼여부:</dt>
+                    <dd>미혼</dd>
+                 </dl>
+                 <ul>
+                    <li>산책</li>
+                    <li>음악감상</li>
+                    <li>영화보기</li>
+                 </ul>
+            </li> -->
+          <script>
+              let class7th = [
+        ["황지영",28,"여자",false,["산책","음악감상","영화보기"]],
+        ["김영환",30,"남자",false,["축구","노래"]],
+        ["이혜리",37,"여자",false,["요리","조리"]],
+        ["신지연",28,"여자",true,["전시회","사격"]],
+        ["정하은",27,"여자",true,["누워있기","고양이돌보기","멍때리기","가만히있기"]],
+        ["정현진",38,"남자",false,["고양이돌보기","영화","러닝"]],
+        ["박시은",25,"여자",false,["게임","고양이돌보기","넷플릭스",]],
+        ["김지원",35,"여자",false,["방탈출","유튜브보기","제작"]]
+        ]
+            for(let i=0; i<class7th.length; i++)
+                {   let likes = ""
+                    for(let j=0; j<class7th[i][4].length; j++){likes+="<li>"+class7th[i][4][j]+"</li>"
+                  
+                }
+                    
+                    document.write( 
+                    
+                            `<li>
+                                <h1>${class7th[i][0]}</h1>
+                                <dl>
+                                    <dt>나이:</dt>
+                                    <dd>${class7th[i][1]}살</dd>
+                                    <dt>성별:</dt>
+                                    <dd>${class7th[i][2]}</dd>
+                                    <dt>결혼여부:</dt>
+                                    <dd>${class7th[i][3]?"기혼":"미혼"}</dd>
+                                </dl>
+                                <h4>취미</h4>
+                                <ul>
+                                ${likes}
+                                </ul>
+                            </li> `)
+            }
+            
+          </script>
+        </ul>
+        <script>
+            
+            document.write(`<p>이 학급의 인원은 ${class7th.length}명 입니다.</p>`)
+             //평균나이
+            let k = 0
+            for(let i=0; i<class7th.length; i++){  k += class7th[i][1]}
+            let aver = Math.round((k/class7th.length))
+       
+           
+            //성별
+            let woman = 0
+            let man = 0
+           
+            for(let l=0; l<class7th.length; l++){
+                if(class7th[l][2]=="여자"){
+                    woman++
+                }
+                if(class7th[l][2]=="남자"){man++}
+            }
+            
+            document.write( `<p>이 학급의 평균나이는 ${aver}살입니다.</p>`)
+            document.write( `<p>이 학급의 남학생은 ${man} 명입니다.</p>`)
+            document.write( `<p>이 학급의 여학생은 ${woman}명입니다.</p>`)
+
+            let manratio = Math.round(man/class7th.length*100)
+            let womanratio = Math.round(woman/class7th.length*100)
+            document.write( `<p>남학생 여학생의 비율은 남자 ${manratio}% 여자${womanratio}% 입니다.</p>`)
+        </script>
+      <ul class="graph">
+        <script>
+            document.write(  `<li style="height:${manratio}%;">남학생 <br>${manratio}%</li>`)
+            document.write(  ` <li style="height:${womanratio}%;">여학생 <br>${womanratio}%</li>`)
+        </script>
+      
+       
+      </ul>
+    </div>
+</body>
+</html>

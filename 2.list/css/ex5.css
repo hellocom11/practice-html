@@ -1,0 +1,79 @@
+*{margin: 0 ; padding: 0; font-size: 12px; font-family: 'Noto Sans KR', sans-serif;}
+ol,ul{list-style: none;}
+a{color: inherit; text-decoration:none;}
+
+#naverShoppingList{
+    /* border: 1px solid red; */
+    width: 1095px;
+    height: auto;
+   
+}
+.a1{
+    /* border: 1px solid yellow; */
+    border-bottom: 1px solid rgb(218, 218, 218);
+    display: flex;
+    height: 208px;
+   
+}
+.proimg{
+   /* border: 1px solid blue; */
+   width:158px;
+   height: 158px;
+   padding: 13px 23px;
+   display: flex;
+   justify-content: center;
+}
+.prodes{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 18px 18px;
+}
+h2{font-size: 16px;  font-weight: bold; }
+.red{color: red; font-size: 18px; font-weight: bold;}
+span{
+    background: gray; color: white;
+    font-size: 15px; padding: 5px; font-weight: lighter;
+}
+.normal{
+    color: gray;
+     padding-top: 10px;
+     padding-bottom: 10px; 
+     padding-right: 10px;  
+     font-size: 13px
+}
+.set>dt{
+    /* border: 1px solid red; */
+    display: inline-block; 
+    font-size: 13px;
+    border-right:1px solid gray;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+.set>dt:last-of-type{
+    border-right: none;
+}
+.aa{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    border: none;
+    padding-right: 5px;
+}
+.aa>dd{color: #0bb75b;}
+.promarket{
+    /* border: 1px solid blue; */
+    margin-top: 18px;
+    margin-left: 110px;
+    width: 250px;
+    /* display: flex; */   
+}
+.promarket>dl>dt{ font-weight: bold; font-size: 15px;}
+.b>li>a{color: gray; display: flex; justify-content: space-between;}
+.b>li>a>b{font-size: 14px;}
+.b>li>a>.b1{color: #2195f5;font-size: 14px;}
+.b>li>a>.b2{color: red;font-size: 14px;}
+
+
+

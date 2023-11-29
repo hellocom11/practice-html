@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{list-style-type:none;}
+ ul{
+    border: 3px solid black;
+    width: 900px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+ ul:after{ 
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+li{
+    border: 1px solid black;
+    background: pink;
+    width:300px;
+    height: 300px;
+    float:left;
+    box-sizing: border-box;
+   
+ } 
+ .a{
+    width: 600px;
+    height: 600px;
+    float:left;
+ }

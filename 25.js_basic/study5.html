@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학계산관련도구</title>
+</head>
+<body>
+    <h1>수학계산관련도구(Math객체메서드)</h1>
+    <p>수학적인 계산을 한 후 결과를 그 자리에 남기는 도구</p>
+    <script>
+      console.log( Math.round(95.43621))  //반올림
+      console.log( Math.ceil(92.2222)) //올림
+      console.log( Math.floor(92.9999)) //내림
+      console.log(Math.sqrt(100)) // 양의제곱근
+      console.log(Math.abs(-23)) // 절대값계산
+      console.log(Math.pow(2,3)) //거듭제곱계산
+      console.log(Math.min(3,2,1,-3)) //최소값 구하기
+      console.log(Math.max(4,3,2,1,5,30)) // 최대값 구하기
+      console.log(Math.random()) // 0보다는 크고~1보다는 작은 난수를 그 자리에 남기는 도구
+    </script>
+    <ul>
+        <li>0번 -> 꺅</li>
+        <li>1번 -> 꺅꺅</li>
+        <li>2번 -> 꺅꺅꺅</li>
+        <li>3번 -> 꺅꺅꺅꾝</li>
+
+    </ul>
+    <script>
+        let luckynumber = Math.round(Math.random()*3) //0,1,2,3
+        let luckynumber2 = Math.round(Math.random()*1000)%4 //0,1,2,3
+        alert(`당신의 오늘 행운의 번호는 ${luckynumber}번 입니다~`)
+        document.write(`당신의 오늘 행운의 번호는 ${luckynumber}번 입니다~`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+ul{list-style: none;}
+
+header{
+    border: 5px solid red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+
+}
+header:hover{height: 500px; background: darkblue;}
+.logo,.lnb{
+    border: 1px solid blue;
+    width: 200px;
+}
+header>nav{
+    border: 1px solid lime;
+    width: 1200px;
+    position: relative;
+
+}
+.dropMenu{
+    border: 1px solid aqua;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: flex;
+    display: none;
+}
+.gnb>li:hover .dropMenu{
+    display: flex;
+
+}
+
+.dropMenu>section{
+    border: 1px solid blue;
+    flex: 1;
+}
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    border: 1px solid aqua;
+    flex: 1;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu>ul{
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.menu>ul>li>a{
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.menu>ul>li{
+    border: 1px solid blue;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 4px 0;
+}
+.menu>ul>li>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu>ul>li>ul>li{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2px 0;
+}
+

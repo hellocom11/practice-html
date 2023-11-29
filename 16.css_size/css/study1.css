@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 10px solid red;
+    width: 800px;
+}
+.parent h1{
+    border: 10px solid blue;
+    width: 50%;
+}
+.parent h1 b{
+    border:  1px solid green;
+    display: block;
+    width: 50%;
+}
+.box1{
+    border:  1px solid red;
+    width: 50vW;
+    height: 50vh;
+    margin: 100px auto;
+    background: darkcyan;
+}
+.box1 strong{
+    border: 1px solid green;
+    display: block;
+    width: 50%;
+}
+.box2{
+    border: 10px solid black;
+    width: 50vw;
+    height: 50vw ;
+    margin: 0 auto; /*clac((100vh - 50vw)/2) auto*/
+    box-sizing: border-box;
+}
+.box3{
+    border:  1px solid red;
+    max-height: 50px;
+    width: 50vw;
+    max-width: 600px;
+    min-width: 400px;
+    
+    
+}

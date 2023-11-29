@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+.studentlist{
+    width: 1000px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.studentlist>li{
+    border: 1px solid black;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.studentlist>li>dl{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.studentlist>li>dl>*{
+    width: 50%;
+}
+.graph{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.graph>li{
+    background: navy;
+    color: white;
+}

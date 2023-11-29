@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li{list-style: none;}
+a{color: inherit; text-decoration: none;}
+html{
+    font-size: 12px;
+}
+/* layout */
+#naverShoppingList{
+    /* border: 1px solid red; */
+    width: 1095px;
+    padding: 0px 14px;
+
+}
+#naverShoppingList>li{
+    border-bottom: 1px solid #ececec;
+    padding: 22px 0;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items:flex-start ;
+    
+}
+#naverShoppingList>li:last-of-type{
+    border-bottom:none;
+  
+}
+#naverShoppingList>li>div{
+    /* border: 1px solid red; */
+}
+.prodes{
+    width: 628px;
+   margin-left:  20px;
+   border-right: 1px solid #ececec;
+}
+.promarket{
+    /* width: 230px; */
+    margin-left: 20px;
+    flex-grow: 1; 
+}
+.prodes>*{
+    /* border: 1px solid black; */
+}
+.prodes>h3{
+    margin-bottom: 10px;
+}
+.price{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.price a{
+    color: white;
+    background: #91949e;
+    font-weight: lighter;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-left: 9px;
+}
+.categ{
+    color: #777;
+    margin-bottom: 10px;
+}
+.mat{
+    display: flex;
+    margin-bottom: 24px
+}
+.mat>*{
+    /* border: 1px solid red; */
+    display: inline;
+}
+.opt{
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    
+}
+.opt dd{display:flex ; margin-right: 10px;}
+
+
+.promarket dt{
+    /* border: 1px solid red; */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.promarket li{
+    /* border: 1px solid blue; */
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.promarket li:last-of-type{
+    margin-bottom: 0;
+}
+.starbox{
+    /* border: 1px solid red; */
+    display: inline-block;
+    font-size: 0;
+    /* 공백도 공백문자라서 띄어쓰기 없애고싶다면 폰트사이즈 0으로... */
+    width: 50px;
+    height: 20px;
+    background: url("../img/star.svg") repeat-x 0 50% ;
+    background-size: auto 14px;
+}
+.starbox img{
+    /* border: 1px solid blue; */
+    height: 16px;
+   
+
+}
+.pick{
+    /* border: 1px solid red; */
+    padding-left: 20px;
+    background:url("../img/favorite.svg") no-repeat 0 50% / 16px auto;
+}
+.report{
+    padding-left: 20px;
+    background: url("../img/report.svg") no-repeat 0 50% / 16px auto;
+}
+.naverplus{
+    /* border: 1px solid red;  */
+}
+.naverplus:after{
+    content: "";
+    /* border: 1px solid blue;  */
+    display: inline-block;
+    width: 42px;
+    height: 13px;
+    vertical-align: middle;
+    background: url("../img/naverplus.svg") no-repeat 50% 50% / contain;
+    margin-left: 5px;
+}
+.npay:after{
+    /* 애프터- 엔페이의 마지막자식태그를 만든다는 뜻,기본 인라인, 무조건 컨텐트가 필요 */
+    content: "";
+    /* border: 1px solid blue;  */
+    display: inline-block;
+    width: 31px;
+    height: 13px;
+    vertical-align: middle;
+    background: url("../img/npay.svg") no-repeat 50% 50% / contain;
+    /* contain - 컨텐츠가 잘리지 않는 선에서 최대한 꽉차게 들어가는 것 */
+    margin-left: 5px;
+}
+    

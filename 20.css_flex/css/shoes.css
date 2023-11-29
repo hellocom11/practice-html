@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    /* font-size:20px; */
+}
+.banner{
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/building.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+   
+   
+   
+   
+}
+
+
+

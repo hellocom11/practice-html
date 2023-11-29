@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix-blend-mode</title>
+    <style>
+        figure{
+            border: 1px solid lightsalmon;
+            /* background: rgb(195, 195, 236); */
+        }
+        figcaption{
+            border: 1px solid lime;
+            padding: 30px;
+            background: orange;
+            mix-blend-mode: hard-light;
+        }
+        img{
+            mix-blend-mode:color-burn;
+        }
+        .box{
+            height: 700px;
+            background: blue url(./img/bird-7953069_640.jpg) no-repeat 0 0;
+            background-blend-mode: difference;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <figcaption>새</figcaption>
+        <img src="./img/bird-7953069_640.jpg" alt="새">
+    </figure>
+    <div class="box">
+
+    </div>
+</body>
+</html>

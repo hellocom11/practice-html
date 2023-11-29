@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "myfont3";
+    src:url("../../13.css_background/font/PulmuoneLOHASBold.woff")
+}
+
+.f_pul{
+    font-family: "myfont3";
+}
+
+div{
+    margin: 0 auto;
+    width: 980px;
+    height: 1346px;
+    text-align: justify;
+   
+}
+
+h2{font-size: 22px;
+   font-weight:bold;
+   margin-top: 40px;
+   margin-bottom: 35px;
+
+}
+p{font-size: 20px;}
+.a{margin-bottom: 35px;}
+.b{margin-bottom: 100px;}
+.c{margin-bottom: 70px;}
+.a.d{font-size: 22px;
+    font-weight:bold;}
+
+h3.a{
+    font-size: 30px;
+
+   }
+

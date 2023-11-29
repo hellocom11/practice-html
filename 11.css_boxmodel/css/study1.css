@@ -1,0 +1,59 @@
+.box1{
+   border-width: 5px;
+   border-style: double;
+   border-color: blue;
+   border-top-width: 3px;
+   border-top:2px solid blue ;
+   border-bottom: 2px solid red;
+   border-left: 5px dotted green;
+   border-right: 5px dashed gold;
+   /*border:2px dashed green;*/}
+
+.box2{
+   border: 1px solid black; 
+   margin-top: 100px;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 100px;
+   margin: 100px;
+}
+
+.box3{
+    border: 1px solid red;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding: 30px;
+}
+
+.s1{
+ border: 10px solid red;
+ width: 200px;
+ height: 200px;
+ padding: 10px;
+ box-sizing: border-box;
+}
+.s2{
+ border: 1px solid blue;
+ width: 200px;
+ height: 200px;
+ box-sizing: border-box;
+}
+.s3{
+   border: 1px solid black;
+   width: 800px;
+   height: 500px;
+}
+.s3>article{
+   border: 1px solid red;
+   width: 50%;
+   /*height: 50%;*/
+}
+.s3>article>span{
+   border: 1px solid blue;
+   display: block;
+   width: 50%;
+   height: 50%;
+   /*height속성은 부모태그에 높이가 지정되지 않은 상태라면 계산되지 않는다*/
+}
